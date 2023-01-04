@@ -6,10 +6,11 @@ import Image from "next/image";
 import { Inter } from "@next/font/google";
 import styles from "../styles/Home.module.css";
 import IntroSection from "../components/sections/IntroSection";
+import HeadingSection from "../components/sections/HeadingSection";
 
 const ScrollContainer = chakra(Scroll.Container);
 
-export default function Home() {
+const Home: NextPage = () => {
   return (
     <>
       <Head>
@@ -19,9 +20,12 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <ScrollContainer>
+      <ScrollContainer height="100vh">
         <IntroSection />
+        <HeadingSection heading="Hello There" />
       </ScrollContainer>
     </>
   );
-}
+};
+
+export default Home;
