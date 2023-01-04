@@ -9,8 +9,8 @@ const keyframes: Record<string, Keyframes> = {
     [section.topAt("container-top")]: {
       translateX: "0%",
     },
-    [section.bottomAt("container-bottom") - container.height / 3]: {
-      translateX: "-100%",
+    [section.bottomAt("container-bottom") - container.height / 2]: {
+      translateX: "100%",
     },
   }),
 };
@@ -19,8 +19,8 @@ const HeadingSection = ({ heading }: any) => {
   return (
     <ScrollSection h="h-screen-4" borderBottom="sm">
       <Flex h="100vh" alignItems="center" pos="sticky" top={0}>
-        <ScrollItem keyframes={keyframes.heading} pos="relative" left="50%">
-          <Heading fontSize={"170px"} whiteSpace="nowrap">
+        <ScrollItem keyframes={keyframes.heading} pos="relative" left="-50%">
+          <Heading fontSize={"270px"} whiteSpace="nowrap">
             {heading}
           </Heading>
         </ScrollItem>
