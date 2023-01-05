@@ -34,7 +34,11 @@ I was born in China and moved to the Canada when I was pursuing my master degree
       tools: ["NextJS", "TypeScript", "Solidity", "Polygon"],
       url: "https://promiseland.app",
       repoUrl: "https://github.com/PromiseLand-App/promiseland-frontend",
-      description: `Led and built a full-stacked decentralized Instagram-liked social NFT marketplace application in which users can create and post their post as NFT and trade it for EthToronto hackathon. All the posts are decentralized and stored permanently on IPFS. 
+      description: `Led and built a full-stacked decentralized Instagram-liked social NFT marketplace application in which users can create and post their post as NFT and trade it for EthToronto hackathon.
+      
+      Coded Solidity smart contracts for the marketplace and deployed them on Polygon testnet.
+      
+      All the posts are decentralized and stored permanently on IPFS. 
       `,
     },
     {
@@ -43,7 +47,14 @@ I was born in China and moved to the Canada when I was pursuing my master degree
       tools: ["NextJS", "TypeScript", "GraphQL"],
       url: "https://graph.cyberconnect.me",
       repoUrl: "https://github.com/cyberconnecthq/CyberGraph",
-      description: `Co-designed and led the development of “CyberGraph” ( Live | Github, 14 Stars), an open-source 3D-graph social connection explorer built with Next.js, Typescript, and Three.js.
+      description: `
+      I co-designed and led the development of “CyberGraph”, an open-source 3D-graph social connection explorer built with Next.js, Typescript, and Three.js when I was working for CyberConnect.Me.
+      
+      In this application, users can explore the social connections of any account on the CyberConnect network. The data is fetched from the cyber database using GraphQL. 
+      
+      It can also shown users' NFTs and Poaps with Alchemy and POAP API.
+      
+      The application is open-sourced and deployed on Vercel.
       `,
     },
   ],

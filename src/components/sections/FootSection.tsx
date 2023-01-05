@@ -6,12 +6,12 @@ import TextEffect from "../TextEfftect";
 const FootSection = () => {
   return (
     <Flex
-      py="2"
+      py={{ base: "2", sm: "2" }}
       flexDirection={{ base: "column", sm: "row" }}
       justifyContent="center"
     >
       <Link href="mailto: brucewangyq@gmail.com" target="_blank">
-        <Heading px="8">
+        <Heading px={{ base: "2", sm: "4" }}>
           <TextEffect
             text={`CONTACT`}
             initial="state1"
@@ -22,7 +22,7 @@ const FootSection = () => {
         </Heading>
       </Link>
       <Link href="https://github.com/brucewangyq" target="_blank">
-        <Heading px="8">
+        <Heading px={{ base: "2", sm: "4" }}>
           <TextEffect
             text={`GITHUB`}
             initial="state1"
@@ -33,7 +33,7 @@ const FootSection = () => {
         </Heading>
       </Link>
       <Link href="https://www.linkedin.com/in/brucewangdev" target="_blank">
-        <Heading px="8">
+        <Heading px={{ base: "2", sm: "4" }}>
           <TextEffect
             text={`LINKEDIN`}
             initial="state1"
@@ -47,7 +47,7 @@ const FootSection = () => {
         href="https://drive.google.com/file/d/16VNqWhaJpNV_Z3KYOkH1NcPMMRQX4qpo/view?usp=sharing"
         target="_blank"
       >
-        <Heading px="8">
+        <Heading px={{ base: "2", sm: "4" }}>
           <TextEffect
             text={`RESUME`}
             initial="state1"

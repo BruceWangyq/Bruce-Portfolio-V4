@@ -7,10 +7,10 @@ const ScrollItem = chakra(Scroll.Item);
 const keyframes: Record<string, Keyframes> = {
   heading: ({ section, container }) => ({
     [section.topAt("container-top")]: {
-      translateX: "0%",
-    },
-    [section.bottomAt("container-bottom") - container.height / 4]: {
       translateX: "100%",
+    },
+    [section.bottomAt("container-bottom") - container.height / 2]: {
+      translateX: "0%",
     },
   }),
 };

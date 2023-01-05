@@ -142,7 +142,7 @@ function IntroSection() {
           initial={{ y: -100 }}
           animate={{ y: 0 }}
           transition={{ delay: 0.8, duration: 0.8 }}
-          transform={{ base: "scale(0.75)", md: "none" }}
+          transform={{ base: "scale(0.55)", md: "none" }}
         >
           <Box pos="relative" width="24rem" height="24rem">
             <GradientImg />
@@ -153,8 +153,20 @@ function IntroSection() {
               top="50%"
               transform="translate(-50%, -50%)"
             >
-              <Heading size="4xl">Bruce</Heading>
-              <Heading size="4xl" textAlign="end">
+              <Heading
+                fontSize="8xl"
+                left="50px"
+                position="absolute"
+                bottom="20px"
+              >
+                Bruce
+              </Heading>
+              <Heading
+                fontSize="8xl"
+                textAlign="end"
+                position="absolute"
+                right="50px"
+              >
                 Wang
               </Heading>
             </Box>

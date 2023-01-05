@@ -73,11 +73,11 @@ const ProjectSection = ({ project }: any) => {
         </LinkButton>
       </Flex>
       <Box py="3xl" px="3xl">
-        <Box maxW="4xl" m="0 auto">
+        <Box maxW="4xl" m="0 auto" alignItems="flex-start">
           <Heading size="2xl" mb="2xl">
             {project.name}
           </Heading>
-          <Text whiteSpace="pre-wrap" size="md" mb="2xl">
+          <Text whiteSpace="pre-line" size="md" mb="2xl">
             {project.description}
           </Text>
         </Box>

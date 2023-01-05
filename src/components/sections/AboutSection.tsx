@@ -25,7 +25,7 @@ const keyframes: Record<string, Keyframes> = {
       translateX: "0%",
     },
     [section.bottomAt("container-bottom") - container.height / 2]: {
-      translateX: "100%",
+      translateX: "-100%",
     },
   }),
 };
