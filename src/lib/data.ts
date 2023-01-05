@@ -11,12 +11,15 @@ export const portfolio = {
 
 I began my web development journey 2 years ago and have committed myself to learning front end and web3 technologies.
 
-I have considerable experience with nextjs, typescript, and postgres, which has become my stack of choice for most web apps.
+I have considerable experience with nextjs, typescript, and tailwindCSS, which has become my stack of choice for most web apps.
 
-I also have considerable experience with solidity and rust and have developed dozens of smart contracts for ethereum/solana.
+I also have considerable experience with solidity and have developed dozens of smart contracts for ethereum/polygon.
 
-I was born in China and moved to the Canada when I was pursuing my master degree of mechanical engineering. Because of this I am fluent in both Mandarin and English.
+I am learning React Native and backend technologies such as NodeJS and GraphQL.
 
+I was born in China and moved to the Canada when I was pursuing my master degree of mechanical engineering. Because of the TV show "Silicon Valley" and movie "The Social Network", I fell in love with the tech industry and decided to pursue a career in tech after worked as mechanical engineer.
+
+I am currently looking for a full-time position as a front end developer or a web3 developer.
 `,
     skills: [
       "TypeScript",
