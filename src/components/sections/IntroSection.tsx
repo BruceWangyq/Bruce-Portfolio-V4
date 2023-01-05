@@ -21,7 +21,7 @@ interface MouseMaskProps extends HTMLMotionProps<"div"> {
 }
 
 const MouseMask = ({
-  maskSize = 200,
+  maskSize = 500,
   maskImage = "radial-gradient(rgba(255,255,255,1) 0%, rgba(255,255,255,0) 70%)",
   autoFade = true,
   children,
@@ -102,8 +102,8 @@ function IntroSection() {
         alignItems="center"
       >
         <Center
-          h="250px"
-          w="400px"
+          h="40vh"
+          w="650px"
           textAlign={{ base: "center", md: "center" }}
           bg="blackAlpha.600"
           borderColor="whiteAlpha.100"
@@ -139,7 +139,7 @@ function IntroSection() {
             <Heading
               pos="relative"
               fontWeight="900"
-              size="4xl"
+              fontSize={"30px"}
               color="blackAlpha.900"
               style={{
                 WebkitTextStroke: 1,
@@ -149,7 +149,7 @@ function IntroSection() {
               Bruce Wang
             </Heading>
           </ChakraMouseMask>
-          <Heading fontWeight="900" size="4xl" color="white">
+          <Heading fontWeight="900" fontSize={"150px"} color="white">
             Bruce Wang
           </Heading>
         </Center>

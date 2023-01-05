@@ -7,6 +7,7 @@ import HeadingSection from "../components/sections/HeadingSection";
 import AboutSection from "../components/sections/AboutSection";
 import { portfolio } from "../lib/data";
 import ProjectSection from "../components/sections/ProjectSection";
+import FootSection from "../components/sections/FootSection";
 
 const ScrollContainer = chakra(Scroll.Container);
 
@@ -28,6 +29,7 @@ const Home: NextPage = () => {
         {portfolio.projects.map((project) => (
           <ProjectSection key={project.name} project={project} />
         ))}
+        <FootSection />
       </ScrollContainer>
     </>
   );

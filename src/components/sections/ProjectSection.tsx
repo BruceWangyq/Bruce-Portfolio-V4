@@ -48,6 +48,15 @@ const ProjectSection = ({ project }: any) => {
         >
           View Project
         </LinkButton>
+        <LinkButton
+          href={project.repoUrl}
+          h="100%"
+          borderY="none"
+          borderRight="none"
+          newTab
+        >
+          Repo
+        </LinkButton>
       </Flex>
       <Box py="3xl" px="3xl">
         <Box maxW="4xl" m="0 auto">
