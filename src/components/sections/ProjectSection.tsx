@@ -25,7 +25,7 @@ const ProjectSection = ({ project }: any) => {
   return (
     <ScrollSection borderBottom="2px">
       <ScrollItem keyframes={keyframes.heading} pos="relative" right="-20%">
-        <Box h="60vh" pos="relative">
+        <Box h="80vh" pos="relative">
           <Image
             layout="fill"
             priority
