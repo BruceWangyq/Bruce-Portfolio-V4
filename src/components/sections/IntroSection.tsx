@@ -154,7 +154,13 @@ function IntroSection() {
             Bruce Wang
           </Heading>
         </Center>
-        <Heading size="3xl" color="white" fontWeight="extrabold" pt="8">
+        <Heading
+          size="3xl"
+          color="white"
+          fontWeight="extrabold"
+          pt="8"
+          textAlign="center"
+        >
           <TextEffect
             text={`A Frontend Developer`}
             initial="state1"

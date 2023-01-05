@@ -7,6 +7,7 @@ import { Inter } from "@next/font/google";
 import styles from "../styles/Home.module.css";
 import IntroSection from "../components/sections/IntroSection";
 import HeadingSection from "../components/sections/HeadingSection";
+import AboutSection from "../components/sections/AboutSection";
 
 const ScrollContainer = chakra(Scroll.Container);
 
@@ -23,6 +24,7 @@ const Home: NextPage = () => {
       <ScrollContainer height="100vh">
         <IntroSection />
         <HeadingSection heading="Hello There" />
+        <AboutSection />
       </ScrollContainer>
     </>
   );
