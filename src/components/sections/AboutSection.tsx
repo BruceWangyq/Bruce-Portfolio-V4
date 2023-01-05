@@ -19,11 +19,11 @@ const ChakraTicker = chakra(Ticker);
 
 const AboutSection = () => {
   return (
-    <ScrollSection h="h-screen-4" borderBottom="sm">
+    <ScrollSection borderBottom="sm">
       <Center>
         <Box
           flex={1}
-          pos="sticky"
+          pos="relative"
           top={0}
           h="h-screen"
           p="3xl"

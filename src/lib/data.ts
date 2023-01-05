@@ -1,6 +1,6 @@
 import profileImg from "../../public/profile.jpg";
 import promiselandImg from "../../public/promiseland.jpg";
-import solanaAdsImg from "./public/solana-ads.jpg";
+import cybergrapghImg from "../../public/cybergraph.jpg";
 
 export const portfolio = {
   about: {
@@ -37,8 +37,8 @@ I was born in China and moved to the Canada when I was pursuing my master degree
       `,
     },
     {
-      name: "Ad Slots Via Solana",
-      img: promiselandImg,
+      name: "CyberGraph - 3D Graph Explorer",
+      img: cybergrapghImg,
       tools: ["NextJS", "TypeScript", "GraphQL"],
       url: "https://graph.cyberconnect.me",
       description: `Co-designed and led the development of “CyberGraph” ( Live | Github, 14 Stars), an open-source 3D-graph social connection explorer built with Next.js, Typescript, and Three.js.

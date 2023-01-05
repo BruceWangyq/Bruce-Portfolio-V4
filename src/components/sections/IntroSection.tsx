@@ -96,8 +96,7 @@ function IntroSection() {
         <ColorModeButton />
       </Box>
       <Flex
-        bg="blackAlpha.900"
-        h="100%"
+        h="h-screen"
         flexDirection="column"
         justifyContent="center"
         alignItems="center"
@@ -106,7 +105,7 @@ function IntroSection() {
           h="250px"
           w="400px"
           textAlign={{ base: "center", md: "center" }}
-          bg="blackAlpha.300"
+          bg="blackAlpha.600"
           borderColor="whiteAlpha.100"
           borderWidth="1px"
           borderRadius="2.5rem"
@@ -154,13 +153,7 @@ function IntroSection() {
             Bruce Wang
           </Heading>
         </Center>
-        <Heading
-          size="3xl"
-          color="white"
-          fontWeight="extrabold"
-          pt="8"
-          textAlign="center"
-        >
+        <Heading size="3xl" fontWeight="extrabold" pt="8" textAlign="center">
           <TextEffect
             text={`A Frontend Developer`}
             initial="state1"
