@@ -9,13 +9,26 @@ import {
 } from "@chakra-ui/react";
 import Image from "next/image";
 import React from "react";
-import { Scroll } from "scrollex";
+import { Keyframes, Scroll } from "scrollex";
 import { portfolio } from "../../lib/data";
 import InlineList from "../InlineList";
 import Ticker from "../Ticker";
 
 const ScrollSection = chakra(Scroll.Section);
 const ChakraTicker = chakra(Ticker);
+
+const ScrollItem = chakra(Scroll.Item);
+
+const keyframes: Record<string, Keyframes> = {
+  heading: ({ section, container }: any) => ({
+    [section.topAt("container-top")]: {
+      translateX: "0%",
+    },
+    [section.bottomAt("container-bottom") - container.height / 2]: {
+      translateX: "100%",
+    },
+  }),
+};
 
 const AboutSection = () => {
   return (
@@ -30,28 +43,30 @@ const AboutSection = () => {
           display={{ base: "none", md: "block" }}
         >
           <Center pos="absolute" inset={0}>
-            <Stack>
-              <Box
-                pos="relative"
-                w="24rem"
-                h="26rem"
-                style={{
-                  borderTopLeftRadius: "50%",
-                  borderTopRightRadius: "50%",
-                }}
-                overflow="hidden"
-              >
-                <Image
-                  src={portfolio.about.img}
-                  layout="fill"
-                  alt=""
-                  objectFit="cover"
-                />
-              </Box>
-              <Heading textAlign="center" size="lg">
-                {portfolio.about.firstName} {portfolio.about.lastName}
-              </Heading>
-            </Stack>
+            <ScrollItem keyframes={keyframes.heading} pos="relative">
+              <Stack>
+                <Box
+                  pos="relative"
+                  w="24rem"
+                  h="26rem"
+                  style={{
+                    borderTopLeftRadius: "50%",
+                    borderTopRightRadius: "50%",
+                  }}
+                  overflow="hidden"
+                >
+                  <Image
+                    src={portfolio.about.img}
+                    layout="fill"
+                    alt=""
+                    objectFit="cover"
+                  />
+                </Box>
+                <Heading textAlign="center" size="lg">
+                  {portfolio.about.firstName} {portfolio.about.lastName}
+                </Heading>
+              </Stack>
+            </ScrollItem>
           </Center>
         </Box>
         <Box h="h-screen" pos="sticky" top={0} overflow="hidden">

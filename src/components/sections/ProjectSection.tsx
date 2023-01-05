@@ -1,26 +1,40 @@
 import { Box, Center, chakra, Flex, Heading, Text } from "@chakra-ui/react";
 import Image from "next/image";
 import React from "react";
-import { Scroll } from "scrollex";
+import { Keyframes, Scroll } from "scrollex";
 import InlineList from "../InlineList";
 import LinkButton from "../LinkButton";
 import Ticker from "../Ticker";
 
 const ChakraTicker = chakra(Ticker);
 const ScrollSection = chakra(Scroll.Section);
+const ScrollItem = chakra(Scroll.Item);
+
+const keyframes: Record<string, Keyframes> = {
+  heading: ({ section, container }: any) => ({
+    [section.topAt("container-top")]: {
+      translateX: "-30%",
+    },
+    [section.bottomAt("container-bottom") - container.height / 4]: {
+      translateX: "0%",
+    },
+  }),
+};
 
 const ProjectSection = ({ project }: any) => {
   return (
     <ScrollSection borderBottom="2px">
-      <Box h="100vh" pos="relative">
-        <Image
-          layout="fill"
-          priority
-          src={project.img}
-          objectFit="cover"
-          alt=""
-        />
-      </Box>
+      <ScrollItem keyframes={keyframes.heading} pos="relative" right="-20%">
+        <Box h="60vh" pos="relative">
+          <Image
+            layout="fill"
+            priority
+            src={project.img}
+            objectFit="cover"
+            alt=""
+          />
+        </Box>
+      </ScrollItem>
       <Flex borderY="2px" h="12">
         <Center px="md" h="100%" borderRight="2px">
           <Heading size="md" fontWeight="bold">
