@@ -177,9 +177,11 @@ function IntroSection() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.8, duration: 0.8 }}
           >
-            <Heading size="md">Front End Developer</Heading>
+            <Heading size="md">Web Developer</Heading>
             <Box flex={1} alignSelf="center" h="1px" bg="border-contrast-xl" />
             <Heading size="md">Web3</Heading>
+            {/* <Box flex={1} alignSelf="center" h="1px" bg="border-contrast-xl" />
+            <Heading size="md">AI</Heading> */}
           </MotionHStack>
         </MotionStack>
         {/* <Flex
