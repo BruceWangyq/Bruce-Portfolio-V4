@@ -69,7 +69,7 @@ const AboutSection = () => {
             </ScrollItem>
           </Center>
         </Box>
-        <Box h="h-full" pos="sticky" top={0} overflow="hidden">
+        <Box h="h-full" pos="relative" top={0} overflow="hidden">
           <ChakraTicker
             loopDuration={12000}
             direction="y"

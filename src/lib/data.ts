@@ -21,14 +21,7 @@ I was born in China and moved to the Canada when I was pursuing my master degree
 
 I am currently looking for a full-time position as a front end developer or a web3 developer.
 `,
-    skills: [
-      "TypeScript",
-      "NextJS",
-      "TailwindCss",
-      "Solidity",
-      "NodeJS",
-      "Polygon",
-    ],
+    skills: ["TypeScript", "NextJS", "TailwindCss", "NodeJS", "Solidity"],
   },
   projects: [
     {
