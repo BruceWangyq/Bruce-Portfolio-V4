@@ -1,6 +1,7 @@
 import profileImg from "../../public/profile.jpg";
 import promiselandImg from "../../public/promiseland.jpg";
 import cybergrapghImg from "../../public/cybergraph.jpg";
+import aistartup from "../../public/An-AI-Startup.jpg";
 
 export const portfolio = {
   about: {
@@ -24,6 +25,19 @@ I am currently looking for a full-time position as a front end developer or a we
     skills: ["TypeScript", "NextJS", "TailwindCss", "NodeJS", "Solidity"],
   },
   projects: [
+    {
+      name: "An-AI-Startup",
+      img: aistartup,
+      tools: ["NextJS", "TypeScript", "OpenAI", "GPT-3"],
+      url: "https://an-ai-startup.vercel.app/",
+      repoUrl: "https://github.com/BruceWangyq/ai-project",
+      description: `
+      Developed an AI project incorporating state-of-the-art technologies such as GPT3 and Stable Diffusion. Utilizing
+Next.js, TailwindCSS, Typescript, Vercel, Replicate, and OpenAI. 
+
+The application allows users to improve their grammar, generate AI images based on prompts, and restore old pictures.
+      `,
+    },
     {
       name: "PromiseLand - Decentralized Instagram",
       img: promiselandImg,
